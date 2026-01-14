@@ -11,8 +11,8 @@ const _cormorant = Cormorant_Garamond({
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Emma & James | Wedding",
-  description: "Join us to celebrate our love - June 15, 2026",
+  title: "Issa & Chris | Boda",
+  description: "Celebra con nosotros nuestro gran día - 14 de Marzo de 2026 en Guadalajara, Jalisco",
   generator: "v0.app",
   icons: {
     icon: [
