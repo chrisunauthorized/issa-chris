@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="absolute bottom-20 right-4 md:right-20 w-40 h-40 md:w-64 md:h-64 rounded-full bg-accent/30 blur-3xl z-[1]" />
 
       <div className="relative z-10 max-w-4xl mx-auto">
-        <p className="text-base md:text-lg uppercase tracking-[0.3em] text-muted-foreground mb-6">
+        <p className="text-xl uppercase tracking-[0.3em] text-muted-foreground mb-6">
           Nuestra Boda
         </p>
 
@@ -33,12 +33,14 @@ export function HeroSection() {
           <div className="h-px w-16 md:w-24 bg-border" />
         </div>
 
-        <p className="text-2xl md:text-3xl lg:text-4xl font-light text-muted-foreground mb-2">14 de Marzo de 2026</p>
-        <p className="text-lg md:text-xl text-muted-foreground">Patio Manku • Guadalajara, Jalisco</p>
+        <div className="text-xl">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-light text-muted-foreground mb-2">14 de Marzo de 2026</p>
+          <p className="text-2xl md:text-3xl text-muted-foreground">Patio Manku • Guadalajara, Jalisco</p>
+        </div>
 
         <a
           href="#countdown"
-          className="inline-block mt-12 px-8 py-3 bg-primary text-primary-foreground rounded-full text-base md:text-lg uppercase tracking-widest hover:bg-primary/90 transition-colors"
+          className="inline-block mt-12 px-8 py-3 bg-primary text-primary-foreground rounded-full text-xl uppercase tracking-widest hover:bg-primary/90 transition-colors"
         >
           Cuenta regresiva para el gran día
         </a>

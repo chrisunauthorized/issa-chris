@@ -3,38 +3,59 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const faqs = [
   {
     question: "¿Cuál es el código de vestimenta?",
-    answer:
-      "Solicitamos vestimenta formal. Piensa en vestidos de cóctel elegantes para damas y trajes o smoking para caballeros. Por favor evita usar lila o blanco, ya que son los colores reservados para la boda. ¡Usa lo que te haga sentir hermosa/o!",
+    answer: (
+      <div className="text-xl">
+        Solicitamos vestimenta formal. Piensa en vestidos de cóctel elegantes para damas y trajes o smoking para caballeros. Por favor evita usar lila o blanco, ya que son los colores reservados para la boda. ¡Usa lo que te haga sentir hermosa/o!
+      </div>
+    ),
   },
   {
     question: "¿Puedo llevar acompañante?",
-    answer:
-      "Debido a la capacidad del lugar, solo podemos acomodar a los invitados formalmente incluidos en tu invitación. Por favor consulta tu invitación para más detalles.",
+    answer: (
+      <div className="text-xl">
+        Debido a la capacidad del lugar, solo podemos acomodar a los invitados formalmente incluidos en tu invitación. Por favor consulta tu invitación para más detalles.
+      </div>
+    ),
   },
   {
     question: "¿Los niños son bienvenidos?",
-    answer:
-      "¡Sí! Los niños son bienvenidos siempre y cuando estén incluidos formalmente en tu invitación. Por favor verifica tu invitación para confirmar quiénes están invitados.",
+    answer: (
+      <div className="text-xl">
+        ¡Sí! Los niños son bienvenidos siempre y cuando estén incluidos formalmente en tu invitación. Por favor verifica tu invitación para confirmar quiénes están invitados.
+      </div>
+    ),
   },
   {
     question: "¿Se permiten bebidas de fuera?",
-    answer:
-      "Tendremos una barra libre completamente surtida durante toda la velada. Pedimos amablemente que los invitados no traigan bebidas externas al lugar.",
+    answer: (
+      <div className="text-xl">
+        Tendremos una barra libre completamente surtida durante toda la velada. Pedimos amablemente que los invitados no traigan bebidas externas al lugar.
+      </div>
+    ),
   },
   {
     question: "¿Hay estacionamiento disponible?",
-    answer:
-      "¡Sí! Habrá servicio de valet parking disponible. El valet estacionará tu vehículo en las calles aledañas y estarán al pendiente del cuidado de tu auto durante todo el evento.",
+    answer: (
+      <div className="text-xl">
+        ¡Sí! Habrá servicio de valet parking disponible. El valet estacionará tu vehículo en las calles aledañas y estarán al pendiente del cuidado de tu auto durante todo el evento.
+      </div>
+    ),
   },
   {
     question: "¿La boda será en interior o exterior?",
-    answer:
-      "La boda completa se llevará a cabo al aire libre en un hermoso jardín. Con el clima primaveral de marzo en Guadalajara, esperamos una temperatura agradable. Recomendamos traer una chamarra ligera para la noche.",
+    answer: (
+      <div className="text-xl">
+        La boda completa se llevará a cabo al aire libre en un hermoso jardín. Con el clima primaveral de marzo en Guadalajara, esperamos una temperatura agradable. Recomendamos traer una chamarra ligera para la noche.
+      </div>
+    ),
   },
   {
     question: "¿Hay registro de regalos?",
-    answer:
-      "¡Tu presencia es el mejor regalo! Sin embargo, si deseas honrarnos con un obsequio, tenemos nuestra mesa de regalos en Liverpool y también puedes contribuir a nuestro fondo de luna de miel vía BBVA. Encuentra toda la información en la sección de Mesa de Regalos de este sitio web.",
+    answer: (
+      <div className="text-xl">
+        ¡Tu presencia es el mejor regalo! Sin embargo, si deseas honrarnos con un obsequio, tenemos nuestra mesa de regalos en Liverpool y también puedes contribuir a nuestro fondo de luna de miel vía BBVA. Encuentra toda la información en la sección de Mesa de Regalos de este sitio web.
+      </div>
+    ),
   },
 ]
 

@@ -41,9 +41,9 @@ export function EventDetailsSection() {
     <section id="details" className="py-24 md:py-32 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <p className="text-base md:text-lg uppercase tracking-[0.3em] text-muted-foreground mb-4">Únete a Nosotros</p>
+          <p className="text-xl uppercase tracking-[0.3em] text-muted-foreground mb-4">Únete a Nosotros</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">Detalles del Evento</h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">Viernes, 14 de Marzo de 2026 • Guadalajara, Jalisco</p>
+          <p className="text-xl text-muted-foreground max-w-xl mx-auto">Viernes, 14 de Marzo de 2026 • Guadalajara, Jalisco</p>
         </div>
 
         {/* Event Cards */}
@@ -54,9 +54,9 @@ export function EventDetailsSection() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <event.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-medium text-card-foreground mb-2">{event.title}</h3>
-                <p className="text-lg md:text-xl text-primary font-medium mb-4">{event.time}</p>
-                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{event.description}</p>
+                <h3 className="text-2xl md:text-3xl font-medium text-card-foreground mb-2">{event.title}</h3>
+                <p className="text-xl md:text-2xl text-primary font-medium mb-4">{event.time}</p>
+                <div className="text-xl text-muted-foreground leading-relaxed">{event.description}</div>
               </CardContent>
             </Card>
           ))}
@@ -70,8 +70,8 @@ export function EventDetailsSection() {
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-medium text-card-foreground mb-1">Patio Manku</h3>
-                <p className="text-muted-foreground">Av. de la Paz 2557, Arcos Vallarta, 44130 Guadalajara, Jal.</p>
+                <h3 className="text-2xl font-medium text-card-foreground mb-1">Patio Manku</h3>
+                <div className="text-xl text-muted-foreground">Av. de la Paz 2557, Arcos Vallarta, 44130 Guadalajara, Jal.</div>
               </div>
             </div>
           </div>

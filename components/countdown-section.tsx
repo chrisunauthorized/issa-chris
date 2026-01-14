@@ -34,7 +34,7 @@ function TimeBlock({ value, label }: { value: number; label: string }) {
           {value.toString().padStart(2, "0")}
         </span>
       </div>
-      <span className="mt-3 text-sm md:text-base uppercase tracking-widest text-muted-foreground">{label}</span>
+      <span className="mt-3 text-xl uppercase tracking-widest text-muted-foreground">{label}</span>
     </div>
   )
 }
@@ -63,7 +63,7 @@ export function CountdownSection() {
     return (
       <section id="countdown" className="py-24 md:py-32 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-4xl text-center">
-          <p className="text-base md:text-lg uppercase tracking-[0.3em] text-muted-foreground mb-4">Cuenta Regresiva Para</p>
+          <p className="text-xl uppercase tracking-[0.3em] text-muted-foreground mb-4">Cuenta Regresiva Para</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-12">Nuestro Gran Día</h2>
           <div className="flex justify-center gap-4 md:gap-8">
             <TimeBlock value={0} label="Días" />
