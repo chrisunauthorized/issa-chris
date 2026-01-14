@@ -1,0 +1,135 @@
+/* 90s Geocities Wedding Theme */
+
+/* 90s Animations */
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+  17% {
+    color: #ff8800;
+  }
+  33% {
+    color: #ffff00;
+  }
+  50% {
+    color: #00ff00;
+  }
+  67% {
+    color: #0088ff;
+  }
+  83% {
+    color: #8800ff;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes bounce-rotate {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+}
+
+.geocities-body {
+  background-color: #000033;
+  color: #ffff00;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23ffffff' fill-opacity='0.3'/%3E%3Ccircle cx='11' cy='9' r='0.5' fill='%23ffff00' fill-opacity='0.5'/%3E%3Ccircle cx='7' cy='15' r='0.7' fill='%23ff00ff' fill-opacity='0.4'/%3E%3C/svg%3E");
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ctext y='12' font-size='12'%3E💖%3C/text%3E%3C/svg%3E"),
+    auto;
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+.rainbow-text {
+  animation: rainbow 3s linear infinite;
+}
+
+.marquee-text {
+  animation: marquee 15s linear infinite;
+}
+
+.sparkle {
+  animation: sparkle 1s ease-in-out infinite;
+}
+
+.bounce-rotate {
+  animation: bounce-rotate 2s ease-in-out infinite;
+}
+
+/* Beveled Border Effect */
+.bevel-border {
+  border: 4px outset #9966ff;
+  box-shadow: inset 2px 2px 0 #cc99ff, inset -2px -2px 0 #330066;
+}
+
+.bevel-inset {
+  border: 4px inset #9966ff;
+  box-shadow: inset -2px -2px 0 #cc99ff, inset 2px 2px 0 #330066;
+}
+
+/* Horizontal rule styles */
+.hr-rainbow {
+  height: 8px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+  border: none;
+  margin: 20px 0;
+}
+
+/* Guestbook style button */
+.geocities-btn {
+  background: linear-gradient(180deg, #9999ff 0%, #6666cc 50%, #333399 100%);
+  border: 3px outset #9966ff;
+  color: #ffff00;
+  text-shadow: 1px 1px 0 #000000;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.geocities-btn:hover {
+  background: linear-gradient(180deg, #bbbbff 0%, #8888ee 50%, #5555bb 100%);
+}
+
+.geocities-btn:active {
+  border-style: inset;
+}

@@ -8,6 +8,16 @@ export function Footer() {
           Issa <span className="text-primary">&</span> Chris
         </p>
         <p className="text-muted-foreground mb-6">14 de Marzo de 2026</p>
+        
+        <div className="mt-8">
+          <a 
+            href="/geocities" 
+            className="text-xs text-muted-foreground hover:text-primary transition-colors"
+            title="¿Buscas una versión más... retro? 🌈"
+          >
+            🕹️ Versión Clásica 90s
+          </a>
+        </div>
       </div>
     </footer>
   )
