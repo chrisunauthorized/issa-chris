@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-const WEDDING_DATE = new Date("2026-06-15T16:00:00")
+const WEDDING_DATE = new Date("2026-03-14T19:00:00")
 
 interface TimeLeft {
   days: number
@@ -63,13 +63,13 @@ export function CountdownSection() {
     return (
       <section id="countdown" className="py-24 md:py-32 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-4xl text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Counting Down To</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-12">Our Special Day</h2>
+          <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Cuenta Regresiva Para</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-12">Nuestro Gran Día</h2>
           <div className="flex justify-center gap-4 md:gap-8">
-            <TimeBlock value={0} label="Days" />
-            <TimeBlock value={0} label="Hours" />
-            <TimeBlock value={0} label="Minutes" />
-            <TimeBlock value={0} label="Seconds" />
+            <TimeBlock value={0} label="Días" />
+            <TimeBlock value={0} label="Horas" />
+            <TimeBlock value={0} label="Minutos" />
+            <TimeBlock value={0} label="Segundos" />
           </div>
         </div>
       </section>
@@ -79,18 +79,18 @@ export function CountdownSection() {
   return (
     <section id="countdown" className="py-24 md:py-32 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-4xl text-center">
-        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Counting Down To</p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-12">Our Special Day</h2>
+        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Cuenta Regresiva Para</p>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-12">Nuestro Gran Día</h2>
 
         <div className="flex justify-center gap-4 md:gap-8">
-          <TimeBlock value={timeLeft.days} label="Days" />
-          <TimeBlock value={timeLeft.hours} label="Hours" />
-          <TimeBlock value={timeLeft.minutes} label="Minutes" />
-          <TimeBlock value={timeLeft.seconds} label="Seconds" />
+          <TimeBlock value={timeLeft.days} label="Días" />
+          <TimeBlock value={timeLeft.hours} label="Horas" />
+          <TimeBlock value={timeLeft.minutes} label="Minutos" />
+          <TimeBlock value={timeLeft.seconds} label="Segundos" />
         </div>
 
         <p className="mt-12 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          We can't wait to celebrate this beautiful journey with you. Your presence will make our day complete.
+          No podemos esperar para celebrar este hermoso camino con ustedes. Su presencia hará que nuestro día sea perfecto.
         </p>
       </div>
     </section>

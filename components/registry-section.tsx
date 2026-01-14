@@ -1,27 +1,8 @@
-import { Gift, ExternalLink } from "lucide-react"
+"use client"
+
+import { Gift, ExternalLink, Store, Globe, CreditCard, Copy, ShoppingBag } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-
-const registries = [
-  {
-    name: "Amazon",
-    description: "A wide selection of items for our new home",
-    url: "https://www.amazon.com/wedding",
-    logo: "/amazon-logo.png",
-  },
-  {
-    name: "Liverpool",
-    description: "Artículos selectos para nuestro hogar",
-    url: "https://www.liverpool.com.mx/mesaderegalos",
-    logo: "/liverpool-mexico-store-logo.jpg",
-  },
-  {
-    name: "Mercado Libre",
-    description: "Regalos con entrega a todo México",
-    url: "https://www.mercadolibre.com.mx",
-    logo: "/mercadolibre-logo.jpg",
-  },
-]
 
 export function RegistrySection() {
   return (
@@ -37,52 +18,127 @@ export function RegistrySection() {
             <Gift className="w-8 h-8 text-primary" />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 text-balance">
-            Wedding Registry
+            Mesa de Regalos
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto text-pretty">
-            Your presence is the greatest gift, but if you wish to honor us with something more, we&apos;ve registered
-            at these stores
+            Tu presencia es el mejor regalo, pero si deseas obsequiarnos algo más, estas son nuestras opciones
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {registries.map((registry) => (
-            <Card
-              key={registry.name}
-              className="group bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5"
-            >
-              <CardContent className="p-6 flex flex-col items-center text-center h-full">
-                <div className="w-full h-16 flex items-center justify-center mb-4 grayscale group-hover:grayscale-0 transition-all duration-300">
-                  <img
-                    src={registry.logo || "/placeholder.svg"}
-                    alt={`${registry.name} logo`}
-                    className="max-h-12 w-auto object-contain"
-                  />
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {/* Liverpool Card */}
+          <Card className="group bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+            <CardContent className="p-8">
+              <div className="w-full h-20 flex items-center justify-center mb-6">
+                <ShoppingBag className="w-16 h-16 text-primary" />
+              </div>
+              
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-semibold text-foreground mb-2">Liverpool</h3>
+                <p className="text-muted-foreground text-lg mb-4">Número de Evento: <span className="font-semibold text-foreground">51852378</span></p>
+              </div>
+
+              <div className="space-y-4 mb-6 text-left">
+                <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
+                  <Globe className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-medium text-foreground mb-1">Compra en Línea</h4>
+                    <p className="text-sm text-muted-foreground">Selecciona tus regalos desde cualquier lugar y los recibiremos automáticamente en nuestro domicilio</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{registry.name}</h3>
-                <p className="text-muted-foreground text-sm mb-6 flex-grow">{registry.description}</p>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300 bg-transparent"
+              </div>
+
+              <Button
+                asChild
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 mb-6"
+              >
+                <a
+                  href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51852378"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2"
                 >
-                  <a
-                    href={registry.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2"
-                  >
-                    View Registry
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+                  Ver Mesa de Regalos
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </Button>
+
+              <div className="text-left">
+                <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
+                  <Store className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-medium text-foreground mb-1">Compra en Tienda</h4>
+                    <p className="text-sm text-muted-foreground">Proporciona el número de evento <span className="font-semibold">51852378</span> en cualquier tienda Liverpool</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* BBVA Card */}
+          <Card className="group bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+            <CardContent className="p-8">
+              <div className="w-full h-20 flex items-center justify-center mb-6">
+                <CreditCard className="w-16 h-16 text-primary" />
+              </div>
+              
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-semibold text-foreground mb-2">BBVA</h3>
+                <p className="text-muted-foreground text-base mb-4">Si no sabes qué regalarnos, tu apoyo nos ayudará para nuestra luna de miel</p>
+              </div>
+
+              <div className="space-y-4 mb-6 text-left">
+                <div className="p-4 bg-secondary/30 rounded-lg">
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Cuenta</h4>
+                  <div className="flex items-center justify-between gap-2 p-3 bg-background/50 rounded-md">
+                    <code className="text-sm font-mono text-foreground">155 714 5945</code>
+                    <button
+                      onClick={() => navigator.clipboard.writeText("012180012345678901234")}
+                      className="text-primary hover:text-primary/80 transition-colors"
+                      title="Copiar CLABE"
+                    >
+                      <Copy className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
+                
+                <div className="p-4 bg-secondary/30 rounded-lg">
+                  <h4 className="font-medium text-foreground mb-2 text-sm">CLABE Interbancaria</h4>
+                  <div className="flex items-center justify-between gap-2 p-3 bg-background/50 rounded-md">
+                    <code className="text-sm font-mono text-foreground">012 320 01557145945 8</code>
+                    <button
+                      onClick={() => navigator.clipboard.writeText("012180012345678901234")}
+                      className="text-primary hover:text-primary/80 transition-colors"
+                      title="Copiar CLABE"
+                    >
+                      <Copy className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
+                
+                <div className="p-4 bg-secondary/30 rounded-lg">
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div>
+                      <p className="text-muted-foreground mb-1">Banco</p>
+                      <p className="font-medium text-foreground">BBVA México</p>
+                    </div>
+                    <div>
+                      <p className="text-muted-foreground mb-1">Beneficiario</p>
+                      <p className="font-medium text-foreground">Issa & Chris</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-center text-sm text-muted-foreground italic">
+                Cualquier aportación será muy apreciada ❤️
+              </p>
+            </CardContent>
+          </Card>
         </div>
 
         <p className="text-center text-muted-foreground text-sm mt-10 max-w-lg mx-auto">
-          We are grateful for your love and support as we begin this new chapter together
+          Estamos agradecidos por su amor y apoyo mientras comenzamos este nuevo capítulo juntos
         </p>
       </div>
     </section>

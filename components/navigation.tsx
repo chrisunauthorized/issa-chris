@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#countdown", label: "Countdown" },
-  { href: "#details", label: "Details" },
-  { href: "#registry", label: "Registry" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#home", label: "Inicio" },
+  { href: "#countdown", label: "Cuenta regresiva" },
+  { href: "#details", label: "Detalles" },
+  { href: "#registry", label: "Registro" },
+  { href: "#faq", label: "Preguntas frecuentes" },
 ]
 
 export function Navigation() {
@@ -31,9 +31,9 @@ export function Navigation() {
             href="#home"
             className="flex items-center gap-2 text-lg md:text-xl font-semibold text-white tracking-wide drop-shadow-sm"
           >
-            <span>Emma</span>
+            <span>Issa</span>
             <span className="text-white/80 font-light">&</span>
-            <span>James</span>
+            <span>Chris</span>
           </a>
 
           {/* Desktop Navigation */}

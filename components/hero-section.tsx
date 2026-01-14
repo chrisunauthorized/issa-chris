@@ -20,11 +20,11 @@ export function HeroSection() {
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <p className="text-sm md:text-base uppercase tracking-[0.3em] text-muted-foreground mb-6">
-          We're Getting Married
+          Nuestra Boda
         </p>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-foreground mb-4 text-balance">
-          Emma <span className="text-primary">&</span> James
+          Issa <span className="text-primary">&</span> Chris
         </h1>
 
         <div className="flex items-center justify-center gap-4 my-8">
@@ -33,20 +33,20 @@ export function HeroSection() {
           <div className="h-px w-16 md:w-24 bg-border" />
         </div>
 
-        <p className="text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground mb-2">June 15, 2026</p>
-        <p className="text-base md:text-lg text-muted-foreground">Rosewood Gardens • Napa Valley, California</p>
+        <p className="text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground mb-2">14 de Marzo de 2026</p>
+        <p className="text-base md:text-lg text-muted-foreground">Patio Manku • Guadalajara, Jalisco</p>
 
         <a
           href="#countdown"
           className="inline-block mt-12 px-8 py-3 bg-primary text-primary-foreground rounded-full text-sm uppercase tracking-widest hover:bg-primary/90 transition-colors"
         >
-          See Our Story
+          Cuenta regresiva para el gran día
         </a>
       </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground z-10">
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
+        <span className="text-xs uppercase tracking-widest">Deslizar</span>
         <div className="w-px h-8 bg-border animate-pulse" />
       </div>
     </section>

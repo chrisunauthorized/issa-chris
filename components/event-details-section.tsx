@@ -1,30 +1,38 @@
-import { MapPin, Clock, Calendar, Sparkles } from "lucide-react"
+import { MapPin, Clock, Calendar, Sparkles, Users, Heart, Camera, Music } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const events = [
   {
-    title: "The Ceremony",
-    time: "4:00 PM",
-    location: "The Rose Garden",
-    address: "Rosewood Gardens, 1234 Vineyard Lane",
-    description: "Join us as we exchange our vows in the beautiful rose garden surrounded by nature.",
-    icon: Sparkles,
+    title: "Recepción",
+    time: "7:00 PM",
+    location: "Patio Manku",
+    address: "Av. de la Paz 2557, Arcos Vallarta, 44130 Guadalajara, Jal.",
+    description: "Te damos la bienvenida a nuestra celebración. Encuentra tu lugar para disfrutar de la ceremonia civil.",
+    icon: Users,
   },
   {
-    title: "Cocktail Hour",
-    time: "5:00 PM",
-    location: "The Terrace",
-    address: "Rosewood Gardens, 1234 Vineyard Lane",
-    description: "Enjoy drinks and appetizers while mingling with other guests on the terrace.",
-    icon: Clock,
+    title: "Ceremonia Civil",
+    time: "7:15 PM",
+    location: "Patio Manku",
+    address: "Av. de la Paz 2557, Arcos Vallarta, 44130 Guadalajara, Jal.",
+    description: "Acompáñanos mientras unimos nuestras vidas en matrimonio con el compromiso legal de amarnos por siempre.",
+    icon: Heart,
   },
   {
-    title: "Reception & Dinner",
-    time: "6:30 PM",
-    location: "The Grand Ballroom",
-    address: "Rosewood Gardens, 1234 Vineyard Lane",
-    description: "Dinner, dancing, and celebration will continue into the night.",
-    icon: Calendar,
+    title: "Coctel y Fotos",
+    time: "7:40 PM",
+    location: "Patio Manku",
+    address: "Av. de la Paz 2557, Arcos Vallarta, 44130 Guadalajara, Jal.",
+    description: "Disfruta de bebidas y aperitivos mientras capturamos los mejores momentos de esta noche inolvidable.",
+    icon: Camera,
+  },
+  {
+    title: "Ingreso Fiesta",
+    time: "8:00 PM",
+    location: "Patio Manku",
+    address: "Av. de la Paz 2557, Arcos Vallarta, 44130 Guadalajara, Jal.",
+    description: "¡Comienza la fiesta! Baile, cena y celebración hasta que el cuerpo aguante. Prepárate para disfrutar al máximo.",
+    icon: Music,
   },
 ]
 
@@ -33,13 +41,13 @@ export function EventDetailsSection() {
     <section id="details" className="py-24 md:py-32 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Join Us</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">Event Details</h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">Monday, June 15th, 2026 • Napa Valley, California</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Únete a Nosotros</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">Detalles del Evento</h2>
+          <p className="text-muted-foreground max-w-xl mx-auto">Viernes, 14 de Marzo de 2026 • Guadalajara, Jalisco</p>
         </div>
 
         {/* Event Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {events.map((event) => (
             <Card key={event.title} className="border-border bg-card hover:shadow-lg transition-shadow">
               <CardContent className="p-6 md:p-8">
@@ -48,7 +56,6 @@ export function EventDetailsSection() {
                 </div>
                 <h3 className="text-xl md:text-2xl font-medium text-card-foreground mb-2">{event.title}</h3>
                 <p className="text-primary font-medium mb-4">{event.time}</p>
-                <p className="text-sm text-muted-foreground mb-2">{event.location}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{event.description}</p>
               </CardContent>
             </Card>
@@ -63,14 +70,14 @@ export function EventDetailsSection() {
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-medium text-card-foreground mb-1">Rosewood Gardens</h3>
-                <p className="text-muted-foreground">1234 Vineyard Lane, Napa Valley, CA 94558</p>
+                <h3 className="text-xl font-medium text-card-foreground mb-1">Patio Manku</h3>
+                <p className="text-muted-foreground">Av. de la Paz 2557, Arcos Vallarta, 44130 Guadalajara, Jal.</p>
               </div>
             </div>
           </div>
           <div className="aspect-[16/9] md:aspect-[21/9] bg-muted relative">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3126.8476033676196!2d-122.32539482427!3d38.29726547185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085063c4a8f5c67%3A0x1a8!2sNapa%20Valley%2C%20CA!5e0!3m2!1sen!2sus!4v1705000000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.9406094148962!2d-103.381576!3d20.6719951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae0d29939551%3A0x3743904425db5961!2sPatio%20Manku!5e0!3m2!1sen!2smx!4v1768348569199!5m2!1sen!2smx"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -83,13 +90,13 @@ export function EventDetailsSection() {
           </div>
           <div className="p-4 md:p-6 text-center">
             <a
-              href="https://maps.google.com/?q=Napa+Valley+California"
+              href="https://maps.app.goo.gl/QxmrQWsiS8s99tuCA"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
             >
               <MapPin className="w-4 h-4" />
-              Get Directions
+              Ver Mapa
             </a>
           </div>
         </div>
