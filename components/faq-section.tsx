@@ -43,11 +43,11 @@ export function FaqSection() {
     <section id="faq" className="py-24 md:py-32 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-3xl">
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Preguntas</p>
+          <p className="text-base md:text-lg uppercase tracking-[0.3em] text-muted-foreground mb-4">Preguntas</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">
             Preguntas Frecuentes
           </h2>
-          <p className="text-muted-foreground">Todo lo que necesitas saber sobre nuestro gran día</p>
+          <p className="text-lg md:text-xl text-muted-foreground">Todo lo que necesitas saber sobre nuestro gran día</p>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
@@ -57,10 +57,10 @@ export function FaqSection() {
               value={`item-${index}`}
               className="bg-card rounded-xl border border-border px-6 data-[state=open]:shadow-sm"
             >
-              <AccordionTrigger className="text-left text-base md:text-lg font-medium text-card-foreground hover:text-primary py-5">
+              <AccordionTrigger className="text-left text-lg md:text-xl font-medium text-card-foreground hover:text-primary py-5">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">{faq.answer}</AccordionContent>
+              <AccordionContent className="text-base md:text-lg text-muted-foreground leading-relaxed pb-5">{faq.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

@@ -20,7 +20,7 @@ export function RegistrySection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 text-balance">
             Mesa de Regalos
           </h2>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto text-pretty">
+          <p className="text-muted-foreground text-xl md:text-2xl max-w-2xl mx-auto text-pretty">
             Tu presencia es el mejor regalo, pero si deseas obsequiarnos algo más, estas son nuestras opciones
           </p>
         </div>
@@ -34,16 +34,16 @@ export function RegistrySection() {
               </div>
               
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-semibold text-foreground mb-2">Liverpool</h3>
-                <p className="text-muted-foreground text-lg mb-4">Número de Evento: <span className="font-semibold text-foreground">51852378</span></p>
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-2">Liverpool</h3>
+                <p className="text-muted-foreground text-lg md:text-xl mb-4">Número de Evento: <span className="font-semibold text-foreground">51852378</span></p>
               </div>
 
               <div className="space-y-4 mb-6 text-left">
                 <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                   <Globe className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-medium text-foreground mb-1">Compra en Línea</h4>
-                    <p className="text-sm text-muted-foreground">Selecciona tus regalos desde cualquier lugar y los recibiremos automáticamente en nuestro domicilio</p>
+                    <h4 className="font-medium text-foreground mb-1 text-base md:text-lg">Compra en Línea</h4>
+                    <p className="text-base md:text-lg text-muted-foreground">Selecciona tus regalos desde cualquier lugar y los recibiremos automáticamente en nuestro domicilio</p>
                   </div>
                 </div>
               </div>
@@ -67,8 +67,8 @@ export function RegistrySection() {
                 <div className="flex items-start gap-3 p-4 bg-secondary/30 rounded-lg">
                   <Store className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-medium text-foreground mb-1">Compra en Tienda</h4>
-                    <p className="text-sm text-muted-foreground">Proporciona el número de evento <span className="font-semibold">51852378</span> en cualquier tienda Liverpool</p>
+                    <h4 className="font-medium text-foreground mb-1 text-base md:text-lg">Compra en Tienda</h4>
+                    <p className="text-base md:text-lg text-muted-foreground">Proporciona el número de evento <span className="font-semibold">51852378</span> en cualquier tienda Liverpool</p>
                   </div>
                 </div>
               </div>
@@ -83,8 +83,8 @@ export function RegistrySection() {
               </div>
               
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-semibold text-foreground mb-2">BBVA</h3>
-                <p className="text-muted-foreground text-base mb-4">Si no sabes qué regalarnos, tu apoyo nos ayudará para nuestra luna de miel</p>
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-2">BBVA</h3>
+                <p className="text-muted-foreground text-lg md:text-xl mb-4">Si no sabes qué regalarnos, tu apoyo nos ayudará para nuestra luna de miel</p>
               </div>
 
               <div className="space-y-4 mb-6 text-left">
@@ -103,9 +103,9 @@ export function RegistrySection() {
                 </div>
                 
                 <div className="p-4 bg-secondary/30 rounded-lg">
-                  <h4 className="font-medium text-foreground mb-2 text-sm">CLABE Interbancaria</h4>
+                  <h4 className="font-medium text-foreground mb-2 text-base md:text-lg">CLABE Interbancaria</h4>
                   <div className="flex items-center justify-between gap-2 p-3 bg-background/50 rounded-md">
-                    <code className="text-sm font-mono text-foreground">012 320 01557145945 8</code>
+                    <code className="text-base md:text-lg font-mono text-foreground">012 180 0123 4567 8901 23</code>
                     <button
                       onClick={() => navigator.clipboard.writeText("012180012345678901234")}
                       className="text-primary hover:text-primary/80 transition-colors"
@@ -117,7 +117,7 @@ export function RegistrySection() {
                 </div>
                 
                 <div className="p-4 bg-secondary/30 rounded-lg">
-                  <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="grid grid-cols-2 gap-3 text-base md:text-lg">
                     <div>
                       <p className="text-muted-foreground mb-1">Banco</p>
                       <p className="font-medium text-foreground">BBVA México</p>
@@ -130,14 +130,14 @@ export function RegistrySection() {
                 </div>
               </div>
 
-              <p className="text-center text-sm text-muted-foreground italic">
+              <p className="text-center text-base md:text-lg text-muted-foreground italic">
                 Cualquier aportación será muy apreciada ❤️
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <p className="text-center text-muted-foreground text-sm mt-10 max-w-lg mx-auto">
+        <p className="text-center text-muted-foreground text-base md:text-lg mt-10 max-w-lg mx-auto">
           Estamos agradecidos por su amor y apoyo mientras comenzamos este nuevo capítulo juntos
         </p>
       </div>

@@ -41,9 +41,9 @@ export function EventDetailsSection() {
     <section id="details" className="py-24 md:py-32 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">Únete a Nosotros</p>
+          <p className="text-base md:text-lg uppercase tracking-[0.3em] text-muted-foreground mb-4">Únete a Nosotros</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">Detalles del Evento</h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">Viernes, 14 de Marzo de 2026 • Guadalajara, Jalisco</p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">Viernes, 14 de Marzo de 2026 • Guadalajara, Jalisco</p>
         </div>
 
         {/* Event Cards */}
@@ -55,8 +55,8 @@ export function EventDetailsSection() {
                   <event.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-medium text-card-foreground mb-2">{event.title}</h3>
-                <p className="text-primary font-medium mb-4">{event.time}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">{event.description}</p>
+                <p className="text-lg md:text-xl text-primary font-medium mb-4">{event.time}</p>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{event.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -84,7 +84,7 @@ export function EventDetailsSection() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Wedding Venue Location"
+              title="Ubicación del Lugar"
               className="absolute inset-0"
             />
           </div>
