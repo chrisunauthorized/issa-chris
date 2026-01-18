@@ -43,7 +43,7 @@ export function EventDetailsSection() {
         <div className="text-center mb-16">
           <p className="text-xl uppercase tracking-[0.3em] text-muted-foreground mb-4">Únete a Nosotros</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">Detalles del Evento</h2>
-          <p className="text-xl text-muted-foreground max-w-xl mx-auto">Viernes, 14 de Marzo de 2026 • Guadalajara, Jalisco</p>
+          <p className="text-xl text-muted-foreground max-w-xl mx-auto">Sábado, 14 de Marzo de 2026 • Guadalajara, Jalisco</p>
         </div>
 
         {/* Event Cards */}

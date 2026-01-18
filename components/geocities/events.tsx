@@ -37,7 +37,7 @@ export function GeocitiesEvents() {
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="rainbow-text">~*~ DeTaLLeS dEl EvEnTo ~*~</span>
           </h2>
-          <p className="text-[#99ccff] mt-2">ViErNeS, 14 dE mArZo, 2026</p>
+          <p className="text-[#99ccff] mt-2">SáBaDo, 14 dE mArZo, 2026</p>
         </div>
 
         {/* Event Table - 90s style! */}
