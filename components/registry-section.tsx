@@ -105,9 +105,10 @@ export function RegistrySection() {
                 <div className="p-4 bg-secondary/30 rounded-lg">
                   <h4 className="font-medium text-foreground mb-2 text-xl">CLABE Interbancaria</h4>
                   <div className="flex items-center justify-between gap-2 p-3 bg-background/50 rounded-md">
-                    <code className="text-base font-mono text-foreground">012 180 0123 4567 8901 23</code>
+      
+                    <code className="text-base font-mono text-foreground">012 320 0155 7145 945 8</code>
                     <button
-                      onClick={() => navigator.clipboard.writeText("012180012345678901234")}
+                      onClick={() => navigator.clipboard.writeText("012320015571459458")}
                       className="text-primary hover:text-primary/80 transition-colors"
                       title="Copiar CLABE"
                     >

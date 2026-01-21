@@ -13,7 +13,7 @@ const registries = [
     description: "¡¡ApOyO pArA nUeStRa LuNa dE mIeL!!",
     url: "#",
     emoji: "💳",
-    clabe: "012 180 0123 4567 8901 23",
+    clabe: "012 320 0155 7145 945 8",
     account: "155 714 5945",
   },
 ]
