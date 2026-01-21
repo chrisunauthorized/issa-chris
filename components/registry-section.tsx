@@ -124,7 +124,7 @@ export function RegistrySection() {
                     </div>
                     <div>
                       <p className="text-muted-foreground mb-1">Beneficiario</p>
-                      <p className="font-medium text-foreground">Issa & Chris</p>
+                      <p className="font-medium text-foreground">Christian José Amparo Sandoval</p>
                     </div>
                   </div>
                 </div>
